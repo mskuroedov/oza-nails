@@ -365,6 +365,7 @@
   @media(min-width: 993px){
     padding-top: 64px;
     padding-bottom: 100px;
+    overflow: hidden;
     .landing-title {
       margin-bottom: 40px;
     }
@@ -378,6 +379,7 @@
         width: 100%;
         margin: auto;
         .owl-prev,.owl-next{
+          cursor: pointer;
           position: absolute;
           top: 0;
           bottom: 0;
@@ -628,6 +630,7 @@
       margin-right: 16px;
     }
     .owl-prev,.owl-next{
+      cursor: pointer;
       width: 56px;
       height: 56px;
       border-radius: 100%;

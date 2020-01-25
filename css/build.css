@@ -477,7 +477,8 @@ button:focus {
   @media (min-width: 993px) {
     .l5 {
       padding-top: 64px;
-      padding-bottom: 100px; }
+      padding-bottom: 100px;
+      overflow: hidden; }
       .l5 .landing-title {
         margin-bottom: 40px; }
       .l5 .slider-container {
@@ -489,6 +490,7 @@ button:focus {
           width: 100%;
           margin: auto; }
           .l5 .slider-container .owl-nav .owl-prev, .l5 .slider-container .owl-nav .owl-next {
+            cursor: pointer;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -608,7 +610,8 @@ button:focus {
     text-transform: uppercase;
     display: inline-block;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    transition: all .2s; }
     .l6 .time-table-btn:hover {
       text-decoration: none;
       background: rgba(255, 255, 255, 0.2); }
@@ -685,6 +688,7 @@ button:focus {
   .slider-nav .owl-nav .owl-prev {
     margin-right: 16px; }
   .slider-nav .owl-nav .owl-prev, .slider-nav .owl-nav .owl-next {
+    cursor: pointer;
     width: 56px;
     height: 56px;
     border-radius: 100%;
