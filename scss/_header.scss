@@ -1,0 +1,89 @@
+.header {
+  background: #060201;
+  padding-bottom: 16px;
+
+  .container {
+    padding: 0 20px;
+  }
+
+  &__burger-btn {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-left: -1px;
+    position: relative;
+    z-index: 100;
+    //margin-left: 4px;
+  }
+
+  &__logo-block {
+    display: flex;
+    align-items: flex-end;
+    //transform: translateY(-55px);
+    margin-top: -55px;
+    .splitter {
+      height: 1px;
+      flex: 1;
+      background: #FFFFFF;
+      opacity: 0.2;
+      margin-bottom: 19px;
+    }
+  }
+
+  &__logo {
+    padding-top: 8px;
+    width: 96%;
+    margin: 0 31px;
+    max-width: 145.5px;
+  }
+
+  &__phone-block {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+  }
+
+  &__phone {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: .5px;
+    transition: all .2s;
+    margin-bottom: 3px;
+
+    &:hover {
+      text-decoration: none;
+      color: $red;
+    }
+  }
+
+}
+
+.messengers {
+  > a{
+    margin-right: -7px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+  .tg {
+    position: relative;
+    z-index: 3;
+  }
+
+  .wa {
+    position: relative;
+    z-index: 4;
+  }
+
+  .viber {
+    position: relative;
+    z-index: 5;
+  }
+}

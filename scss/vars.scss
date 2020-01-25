@@ -1,0 +1,11 @@
+$black:#18191A;
+$red:#EF3B3B;
+
+body{
+  background: $black;
+  font-family: Gordita,sans-serif;
+}
+
+button:focus{
+  outline: none;
+}

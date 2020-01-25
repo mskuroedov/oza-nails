@@ -1,0 +1,112 @@
+.footer {
+  background: #060201;
+  color: white;
+  padding-top: 64px;
+  padding-bottom: 40px;
+
+  hr {
+    background: #FFFFFF;
+    opacity: 0.2;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    letter-spacing: .78px;
+    margin-bottom: 16px;
+
+    &[href]:hover {
+      text-decoration: none;
+      color: $red;
+    }
+  }
+
+  &__logo {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 25px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    > a {
+      width: 40px;
+      height: 40px;
+
+      border: 1px solid rgba(255, 255, 255, .2);
+      transition: all .2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      margin: 0 4px;
+
+      &:hover {
+        text-decoration: none;
+        border-color: white;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    .messengers{
+      margin-right: 21px;
+    }
+  }
+
+
+  &__phone {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 16px;
+    //margin-left: 41px;
+    padding-top: 4px;
+    letter-spacing: 0.8px;
+    &:hover{
+      text-decoration: none;
+      color: $red;
+    }
+  }
+  &__link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    display: block;
+    color: white;
+    transition: all .2s;
+    letter-spacing: .6px;
+    margin-bottom: 14px;
+    &:hover{
+      color: $red;
+      text-decoration: none;
+    }
+  }
+  &__copyright{
+    margin-top: 34px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    letter-spacing: .78px;
+  }
+}

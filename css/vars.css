@@ -1,0 +1,6 @@
+body {
+  background: #18191A;
+  font-family: Gordita,sans-serif; }
+
+button:focus {
+  outline: none; }
