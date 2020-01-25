@@ -1,13 +1,20 @@
 .footer {
-  background: #060201;
+  background: #18191A;
   color: white;
   padding-top: 64px;
   padding-bottom: 40px;
+  @media(min-width: 993px) {
+    padding-top: 62px;
+    padding-bottom: 52px;
+  }
 
   hr {
     background: #FFFFFF;
     opacity: 0.2;
     margin-bottom: 24px;
+    @media(min-width:993px){
+      margin-bottom: 41px;
+    }
   }
 
   &__text {
@@ -23,6 +30,13 @@
     &[href]:hover {
       text-decoration: none;
       color: $red;
+    }
+
+    @media(min-width: 993px) {
+      text-align: left;
+      &[href] {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -55,6 +69,11 @@
         border-color: white;
       }
     }
+
+    @media(min-width: 993px) {
+      margin-top: 27px;
+      margin-right: -3px;
+    }
   }
 
   &__contacts {
@@ -62,8 +81,16 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
-    .messengers{
+
+    .messengers {
       margin-right: 21px;
+    }
+
+    @media(min-width: 993px) {
+      margin-top: 30px;
+      .messengers {
+        margin-right: 0;
+      }
     }
   }
 
@@ -75,15 +102,17 @@
     font-size: 16px;
     line-height: 16px;
     margin-right: 16px;
-    //margin-left: 41px;
     padding-top: 4px;
     letter-spacing: 0.8px;
-    &:hover{
+    transition: all .2s;
+
+    &:hover {
       text-decoration: none;
       color: $red;
     }
   }
-  &__link{
+
+  &__link {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -94,12 +123,19 @@
     transition: all .2s;
     letter-spacing: .6px;
     margin-bottom: 14px;
-    &:hover{
+
+    &:hover {
       color: $red;
       text-decoration: none;
     }
+    @media(min-width: 993px){
+      display: inline-block;
+      margin: 0 24px;
+    }
   }
-  &__copyright{
+
+
+  &__copyright {
     margin-top: 34px;
     font-weight: normal;
     font-size: 12px;
@@ -108,5 +144,8 @@
     color: #FFFFFF;
     display: block;
     letter-spacing: .78px;
+    @media(min-width: 993px){
+      margin-top: 55px;
+    }
   }
 }

@@ -1,9 +1,12 @@
 .header {
-  background: #060201;
+  background: transparent;
   padding-bottom: 16px;
 
   .container {
     padding: 0 20px;
+    @media(min-width: 993px){
+      padding: 0 16px;
+    }
   }
 
   &__burger-btn {
@@ -28,6 +31,9 @@
       background: #FFFFFF;
       opacity: 0.2;
       margin-bottom: 19px;
+      @media(min-width: 993px){
+        transform: translateY(-7px);
+      }
     }
   }
 
@@ -36,6 +42,10 @@
     width: 96%;
     margin: 0 31px;
     max-width: 145.5px;
+    @media(min-width: 993px){
+      margin: 0 62px;
+      max-width: 182.5px;
+    }
   }
 
   &__phone-block {
@@ -45,6 +55,10 @@
     position: relative;
     z-index: 2;
     flex-wrap: wrap;
+    @media(min-width: 993px){
+      padding-top: 25px;
+      align-items: center;
+    }
   }
 
   &__phone {
@@ -61,6 +75,40 @@
       text-decoration: none;
       color: $red;
     }
+    @media(min-width: 993px){
+      font-size: 16px;
+      line-height: 16px;
+      margin-right: 16px;
+      letter-spacing: .8px;
+    }
+  }
+
+  &__link{
+    &-block{
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      position: relative;
+      z-index: 15;
+      &.mt{
+        margin-top: 35px;
+      }
+    }
+    transition: all .2s;
+    margin: 0 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: .8px;
+    color: #FFFFFF;
+    &:first-of-type{
+      margin-left: 0;
+    }
+    &:hover{
+      text-decoration: none;
+      color:$red;
+    }
   }
 
 }
@@ -70,6 +118,13 @@
     margin-right: -7px;
     &:last-of-type{
       margin-right: 0;
+    }
+    img{
+      opacity: 1;
+      transition: all .2s;
+    }
+    &:hover{
+      img{opacity: .85}
     }
   }
   .tg {
@@ -85,5 +140,15 @@
   .viber {
     position: relative;
     z-index: 5;
+  }
+
+  @media(min-width: 993px){
+    > a{
+      margin-right: -9px;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
   }
 }
