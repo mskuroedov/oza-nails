@@ -855,7 +855,10 @@ button:focus {
             border-radius: 100%;
             background: transparent;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all .2s; }
+            transition: all .2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center; }
             .l5 .slider-container .owl-nav .owl-prev img, .l5 .slider-container .owl-nav .owl-next img {
               position: relative;
               z-index: 3; }
@@ -863,13 +866,14 @@ button:focus {
               content: '';
               position: absolute;
               z-index: 2;
-              width: 100%;
-              height: 100%;
+              width: 56px;
+              height: 56px;
               border-radius: 100%;
               border: 1px solid transparent;
               border-right: 1px solid #EF3B3B;
               transition: all .2s;
-              top: -1px; }
+              top: -1px;
+              left: -1px; }
             .l5 .slider-container .owl-nav .owl-prev:not(.disabled):hover, .l5 .slider-container .owl-nav .owl-next:not(.disabled):hover {
               border-color: #EF3B3B; }
               .l5 .slider-container .owl-nav .owl-prev:not(.disabled):hover:after, .l5 .slider-container .owl-nav .owl-next:not(.disabled):hover:after {
@@ -1050,7 +1054,10 @@ button:focus {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
-    transition: all .2s; }
+    transition: all .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
     .slider-nav .owl-nav .owl-prev img, .slider-nav .owl-nav .owl-next img {
       position: relative;
       z-index: 3; }
@@ -1058,13 +1065,14 @@ button:focus {
       content: '';
       position: absolute;
       z-index: 2;
-      width: 100%;
-      height: 100%;
+      width: 56px;
+      height: 56px;
       border-radius: 100%;
       border: 1px solid transparent;
       border-right: 1px solid #EF3B3B;
       transition: all .2s;
-      top: -1px; }
+      top: -1px;
+      left: -1px; }
     .slider-nav .owl-nav .owl-prev:not(.disabled):hover, .slider-nav .owl-nav .owl-next:not(.disabled):hover {
       border-color: #EF3B3B; }
       .slider-nav .owl-nav .owl-prev:not(.disabled):hover:after, .slider-nav .owl-nav .owl-next:not(.disabled):hover:after {
