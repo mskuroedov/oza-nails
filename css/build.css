@@ -747,6 +747,7 @@ button:focus {
       transform: translateX(-33.9%) translateY(67.6%); }
 
 .l3 {
+  background: url("../assets/index/parallax-fade.png") center no-repeat;
   padding-top: 60px;
   padding-bottom: 17px; }
   @media (min-width: 993px) {
