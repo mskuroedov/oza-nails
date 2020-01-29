@@ -1,0 +1,80 @@
+.students {
+  background: #1B1E23;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @media(min-width:993px){
+    padding-bottom: 138px;
+  }
+
+  &__row {
+    @media(min-width: 993px){
+      margin-top: -126px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    @media (min-width:993px) {
+      margin-bottom: 64px;
+    }
+    .img {
+      margin-bottom: 24px;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .name {
+      font-family: Playfair Display, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: .7px;
+      margin-bottom: 7px;
+    }
+
+    .inst, .phone {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: white;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.6px;
+
+      &[href]:hover {
+        svg path {
+          fill: $red;
+        }
+
+        color: $red;
+        text-decoration: none;
+      }
+
+      svg {
+        > * {
+          transition: all .2s;
+        }
+
+        margin-right: 8px;
+      }
+    }
+    .inst{
+      margin-left: -6px;
+      margin-bottom: 5px;
+    }
+    .phone{
+      margin-left: -12px;
+      letter-spacing: .8px;
+    }
+  }
+
+}

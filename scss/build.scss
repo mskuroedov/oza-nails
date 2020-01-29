@@ -1,11 +1,21 @@
+
 //fonts
 @import "../assets/fonts/Gordita/stylesheet.css";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-//styles
+
+//styles - common
 @import "bootstrap-override";
 @import "vars";
 @import "header";
 @import "mobile-menu";
-@import "landing";
+@import "jumbotron";
+@import "paginator";
 @import "footer";
+//styles - pages
+@import "landing";
+@import "students";
+@import "teachers";
+@import "schedule";
+@import "event";
+
 

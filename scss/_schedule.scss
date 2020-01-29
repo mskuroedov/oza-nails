@@ -1,0 +1,138 @@
+.schedule{
+  background: #1B1E23;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  @media(min-width: 993px){
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+
+  &__item{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    margin: 0 5px 32px;
+    @media(min-width: 993px){
+      margin: 0 0 32px;
+    }
+    &__about{
+      padding: 24px 21px 32px 24px;
+
+      .name{
+        font-family: Playfair Display,sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: .3px;
+        margin-bottom: 17px;
+      }
+
+      .text{
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: .6px;
+        margin-bottom: 22px;
+      }
+      .actions{
+        display: flex;
+        flex-wrap: wrap;
+        .apply-btn{
+          flex: 100%;
+        }
+        @media(min-width: 993px){
+          flex-wrap: nowrap;
+          .apply-btn{
+            flex: inherit;
+            margin-right: 31px;
+          }
+          .time-table-btn{
+            margin-top: 0;
+          }
+        }
+      }
+      @media(min-width: 993px){
+        padding-top: 32px;
+        padding-right: 24px;
+        .text{
+          font-size: 16px;
+          line-height: 28px;
+          margin-top: -2px;
+          letter-spacing: .7px;
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+
+  }
+
+  .time-table-btn {
+    margin-top: 23px;
+    background: rgba(255, 255, 255, .05);
+    color: white;
+    padding: 20px 24px 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    transition: all .2s;
+    &:hover {
+      text-decoration: none;
+      background: rgba(255, 255, 255, .2);
+    }
+  }
+
+  .paginator{
+    @media(min-width: 993px){
+      margin-top: 31px;
+    }
+  }
+}
+
+.options{
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+.opt{
+  margin-bottom: 24px;
+  &__name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    opacity: .5;
+    letter-spacing: .7px;
+    margin-bottom: 9px;
+  }
+  &__icon{
+    margin-top: -1px;
+    margin-right: 12px;
+    display: inline-block;
+  }
+  &__val{
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .4px;
+  }
+  &:first-of-type{
+    margin-right: 17px;
+  }
+  &:last-of-type{
+    .opt__val{
+      letter-spacing: 1px;
+    }
+  }
+  @media(min-width: 993px){
+    &:first-of-type{
+      margin-right: 33px;
+    }
+  }
+}

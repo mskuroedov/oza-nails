@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oza event</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/build.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="mobile-menu">
+        <div class="mobile-menu__bg"></div>
+        <div class="mobile-menu__block">
+            <button class="mobile-menu__close">
+                <img src="./assets/icons/cross.svg" alt="">
+            </button>
+            <a href="#" class="mobile-menu__item">Расписание</a>
+            <a href="#" class="mobile-menu__item">Курсы</a>
+            <a href="#" class="mobile-menu__item">Команда</a>
+            <a href="#" class="mobile-menu__item">Выпусники</a>
+            <a href="#" class="mobile-menu__item">Мероприятия</a>
+            <a href="#" class="mobile-menu__item">Академия</a>
+            <a href="#" class="mobile-menu__item">Магазин</a>
+            <a href="#" class="mobile-menu__item">Контакты</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 d-lg-none">
+                <button class="header__burger-btn" id="burger">
+                    <img src="./assets/icons/burger.svg" alt="">
+                </button>
+            </div>
+            <div class="col-6 d-none d-lg-block">
+                <div class="header__link-block mt">
+                    <a href="#" class="header__link">Расписание</a>
+                    <a href="#" class="header__link">Курсы</a>
+                    <a href="#" class="header__link">Команда</a>
+                    <a href="#" class="header__link">Выпусники</a>
+                    <a href="#" class="header__link">Мероприятия</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="header__phone-block">
+                    <a href="tel:+7 (968) 100-04-34" class="header__phone">+7 (968) 100-04-34</a>
+                    <div class="messengers">
+                        <a href="#" class="tg">
+                            <img src="./assets/icons/tg-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="wa">
+                            <img src="./assets/icons/watsapp-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="viber">
+                            <img src="./assets/icons/viber-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row logo-row">
+            <div class="col-12 text-center">
+                <div class="header__logo-block">
+                    <div class="splitter"></div>
+                    <img src="./assets/logo.png" alt="" class="header__logo img-fluid">
+                    <div class="splitter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-none d-lg-flex">
+            <div class="col-12">
+                <div class="header__link-block">
+                    <a href="#" class="header__link">Академия</a>
+                    <a href="#" class="header__link">Магазин</a>
+                    <a href="#" class="header__link">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="jumber">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumber__nav m">
+                    <a href="index.html" class="item">Главная</a>
+                    <div class="dot"></div>
+                    <a href="#" class="item">Расписание</a>
+                    <div class="dot"></div>
+                    <a href="#" class="item">Всё</a>
+                    <div class="dot"></div>
+                    <a href="#" class="item absoluted">SMARTMANICURE</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <h1 class="jumber__title">SMARTMANICURE</h1>
+            </div>
+            <div class="col-12">
+                <div class="jumber__bottom">
+                    <div class="options">
+                        <div class="opt">
+                            <div class="opt__name">Длительность курса</div>
+                            <div class="opt__icon">
+                                <img src="./assets/icons/list.svg" alt="">
+                            </div>
+                            <div class="opt__val">6 занятий</div>
+                        </div>
+                        <div class="opt">
+                            <div class="opt__name">Начало курса</div>
+                            <div class="opt__icon">
+                                <img src="./assets/icons/clock.svg" alt="">
+                            </div>
+                            <div class="opt__val">13.12.2019</div>
+                        </div>
+                        <div class="opt">
+                            <div class="opt__name">Место проведения</div>
+                            <div class="opt__icon">
+                                <img src="./assets/icons/geo.svg" alt="">
+                            </div>
+                            <div class="opt__val">Омск, ул. 5 Армии, 6</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="event">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <div class="event__album">
+                    <img src="./assets/schedule/event-1.png" alt="" class="img-fluid ">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 ml-lg-auto">
+                <div class="event__description">
+                    <p class="text">Программа первого дня: SPA Маникюр. Обрезной маникюр. Программа второго дня:
+                        Безопасность клиента и мастера. Комбинированный маникюр. Программа третьего дня: Аппаратный
+                        маникюр. Восстановление архитектуры и укрепление натуральных ногтей. Болезни и повреждения
+                        ногтей. Программа четвертого дня: Аппаратный маникюр и работа с моделирующими корректорами,
+                        удлинение свободного края на формах. Рисованный френч. Секреты удачного снимка, <br
+                                class="d-lg-none"> макро-сьемка и
+                        работа с редакторами. Создание логотипа своими руками! Программа пятого дня: Аппаратный маникюр
+                        + ремонт и исправление длины без форм полигелями. Текстура гель-лаками. Зачетная работа.</p>
+                    <a href="#" class="apply-btn">
+                        <svg width="53" height="46" viewBox="0 0 53 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 22.6274H32M32 22.6274L29 19.6274M32 22.6274L29 25.6274" stroke="#EF3B3B"/>
+                            <rect x="8.07967" y="22.6274" width="31" height="31" transform="rotate(-45 8.07967 22.6274)"
+                                  stroke="#EF3B3B"/>
+                        </svg>
+                        записаться</a>
+                    <div class="socials">
+                        <div class="t">
+                            или через:
+                        </div>
+                        <div class="messengers">
+                            <a href="#" class="tg">
+                                <img src="./assets/icons/tg-icon.svg" alt="">
+                            </a>
+                            <a href="#" class="wa">
+                                <img src="./assets/icons/watsapp-icon.svg" alt="">
+                            </a>
+                            <a href="#" class="viber">
+                                <img src="./assets/icons/viber-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="event__details">
+                    <div class="detail">
+
+                        <div class="row">
+                            <div class="d-none d-lg-block col-lg-3 ">
+                                <div class="detail__name">Преподаватель</div>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <div class="detail__val">
+                                    <div class="l2__person">
+                                        <div class="img">
+                                            <img src="./assets/index/anna-ozolina.png" alt="">
+                                        </div>
+                                        <div class="description">
+                                            <div class="name">Анна Озолина</div>
+                                            <div class="whois">ведущий преподаватель академии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+
+                        <div class="row">
+                            <div class="d-none d-lg-block col-lg-3 ">
+                                <div class="detail__name">Дополнительная информация</div>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <div class="detail__val">
+                                    Программа первого дня: SPA Маникюр. Обрезной маникюр. Программа второго дня:
+                                    Безопасность клиента и мастера. Комбинированный маникюр. Программа третьего дня:
+                                    Аппаратный маникюр. Восстановление архитектуры и укрепление натуральных ногтей.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+
+                        <div class="row">
+                            <div class="d-none d-lg-block col-lg-3 ">
+                                <div class="detail__name">Дополнительная информация 2</div>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <div class="detail__val">
+                                    Программа первого дня: SPA Маникюр. Обрезной маникюр. Программа второго дня:
+                                    Безопасность клиента и мастера. Комбинированный маникюр. Программа третьего дня:
+                                    Аппаратный маникюр. Восстановление архитектуры и укрепление натуральных ногтей.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="l5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="landing-title">Выпускники</h2>
+            </div>
+            <div class="col-12 slider-container">
+
+                <div class="owl-carousel owl-theme" id="students_slider">
+                    <div>
+                        <img src="./assets/index/students-slider-1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/index/students-slider-2.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/index/students-slider-3.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/index/students-slider-4.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/index/students-slider-1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/index/students-slider-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="event__opportunities">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="event__opportunities__item">
+                    <div class="img">
+                        <img src="./assets/icons/opp-1.svg" alt="">
+                    </div>
+                    <div class="text">По окончании курса выдается сертификат OZA Academy</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="event__opportunities__item">
+                    <div class="img">
+                        <img src="./assets/icons/opp-2.svg" alt="">
+                    </div>
+                    <div class="text">Все материалы и инструменты предоставляются</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="event__opportunities__item">
+                    <div class="img">
+                        <img src="./assets/icons/opp-3.svg" alt="">
+                    </div>
+                    <div class="text">На курс необходимо принести только сменную обувь</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <a href="mailto:storesota@gmail.com" class="footer__text">storesota@gmail.com</a>
+                <div class="footer__text">Россия, Омск, 5-ой Армии, 6</div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <img src="./assets/logo.png" alt="" class="footer__logo">
+            </div>
+            <div class="col-12 col-lg-auto ml-auto">
+                <div class="footer__socials">
+                    <a href="#">
+                        <img src="./assets/icons/instagram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/vk-social-network-logo.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/facebook.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="footer__contacts">
+                    <a href="tel:+7 (968) 100-04-34" class="footer__phone">+7 (968) 100-04-34</a>
+                    <div class="messengers">
+                        <a href="#" class="tg">
+                            <img src="./assets/icons/tg-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="wa">
+                            <img src="./assets/icons/watsapp-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="viber">
+                            <img src="./assets/icons/viber-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <hr>
+            </div>
+            <div class="col-6 pr-1 pr-lg-3 d-lg-none">
+                <a href="#" class="footer__link ml-lg-auto">Расписание</a>
+                <a href="#" class="footer__link">Курсы</a>
+                <a href="#" class="footer__link">Команда</a>
+                <a href="#" class="footer__link">Выпусники</a>
+            </div>
+            <div class="col-6 pl-1 pl-lg-3 d-lg-none">
+                <a href="#" class="footer__link ">Мероприятия</a>
+                <a href="#" class="footer__link">Академия</a>
+                <a href="#" class="footer__link">Магазин</a>
+                <a href="#" class="footer__link mr-lg-auto">Контакты</a>
+            </div>
+            <div class="col-12 justify-content-center d-none d-lg-flex">
+                <a href="#" class="footer__link ml-lg-auto">Расписание</a>
+                <a href="#" class="footer__link">Курсы</a>
+                <a href="#" class="footer__link">Команда</a>
+                <a href="#" class="footer__link">Выпусники</a>
+                <a href="#" class="footer__link ">Мероприятия</a>
+                <a href="#" class="footer__link">Академия</a>
+                <a href="#" class="footer__link">Магазин</a>
+                <a href="#" class="footer__link mr-lg-auto">Контакты</a>
+
+            </div>
+            <div class="col-12">
+                <div class="footer__copyright">
+                    © OSA ACADEMY, 2019
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!--//mobile-menu-script-->
+<script>
+    let mm = $('.mobile-menu'),
+        body = $('body');
+
+    $('#burger').on('click', function () {
+        mm.addClass('--open');
+        body.css('overflow', 'hidden')
+        $('.mobile-menu__close').css('pointer-events', 'none')
+        $('.mobile-menu__bg').css('pointer-events', 'none')
+        setTimeout(function () {
+            mm.addClass('--open');
+        }, 200);
+        setTimeout(function () {
+            $('.mobile-menu__close').css('pointer-events', '')
+            $('.mobile-menu__bg').css('pointer-events', '')
+        }, 800)
+    });
+    $('.mobile-menu__bg').on('click', function () {
+        body.css('overflow', '')
+
+        if (mm.hasClass('--open')) {
+            mm.addClass('--closing');
+            mm.removeClass('--open');
+            setTimeout(function () {
+                mm.removeClass('--closing');
+            }, 200)
+        }
+
+    })
+    $('.mobile-menu__close').on('click', function () {
+        body.css('overflow', '')
+        if (mm.hasClass('--open')) {
+            mm.addClass('--closing');
+            mm.removeClass('--open');
+            setTimeout(function () {
+                mm.removeClass('--closing');
+            }, 200)
+        }
+    })
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    let students_slider = $('#students_slider');
+    students_slider.owlCarousel({
+        items: 4,
+        dots: true,
+        navText: ["<img src='./assets/icons/arrow-left.svg'>", "<img src='./assets/icons/arrow-right.svg'>"],
+        responsive: {
+            0: {
+                items: 2,
+                slideBy: 2,
+                margin: 16,
+            },
+            768: {
+                items: 3,
+                slideBy: 3,
+                margin: 32,
+            },
+            993: {
+                items: 4,
+                slideBy: 4,
+                margin: 32,
+                nav: true,
+                dots: false,
+                onInitialized: function () {
+                    $('.l5 .slider-container').append($('#students_slider .owl-nav'));
+                },
+            },
+        }
+    });
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
