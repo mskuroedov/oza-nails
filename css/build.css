@@ -747,7 +747,6 @@ button:focus {
       transform: translateX(-33.9%) translateY(67.6%); }
 
 .l3 {
-  background: url("../assets/index/parallax-fade.png") center no-repeat;
   padding-top: 60px;
   padding-bottom: 17px; }
   @media (min-width: 993px) {
@@ -767,6 +766,15 @@ button:focus {
       width: 100%;
       height: 100%;
       z-index: -1; }
+    .l3.jarallax [id^="jarallax-container"]:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url(../assets/index/parallax-fade.png);
+      background-size: cover; }
   .l3 video {
     transition: transform 0.1s ease 0s; }
   .l3 .container {
